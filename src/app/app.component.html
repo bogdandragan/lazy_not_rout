@@ -1,0 +1,10 @@
+<header>
+  <h2>{{title}}</h2>
+</header>
+<app-widgets (settingsShown)="onSettingsShown($event)"></app-widgets>
+<ng-template [ngIf]="isShowSettings">
+  <app-panel></app-panel>
+</ng-template>
+<!--<router-outlet></router-outlet>-->
+
+
